@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Art Portfolio</title>
+    <style>
+        body {
+            font-family: "Bebas Neue", serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project {
+            text-align: center;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+        }
+
+        .project p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .about {
+            margin: 40px 20px;
+            font-size: 1em;
+            line-height: 1.5;
+            color: #333;
+            text-align: right;
+        }
+
+        .subscribe {
+            margin: 40px 0;
+        }
+
+        .subscribe input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .subscribe button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons img {
+            width: 48px;
+            height: 48px;
+        }
+
+        footer {
+            font-size: 0.9em;
+            margin: 20px 0;
+        }
+
+        .contact-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .subscribe input[type="email"] {
+                width: 200px;
+            }
+
+            .projects {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+            }
+
+            header a {
+                margin: 5px 0;
+            }
+
+            .about {
+                text-align: right;
+            }
+
+            .subscribe input[type="email"] {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .subscribe button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>POPARTPORTFOLIO</div>
+    <nav>
+        <a href="#">ABOUT</a>
+        <a href="#">PROJECTS</a>
+        <a href="#">BLOG</a>
+        <a href="#">CONTACT</a>
+    </nav>
+</header>
+
+<h1>WELCOME TO MY POP ART WORLD!</h1>
+
+<img src="img1.jpeg" alt="Hero Image" class="hero-image">
+
+<div class="projects">
+    <div class="project">
+        <img src="img9.jpeg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Graphic Design</p>
+    </div>
+    <div class="project">
+        <img src="img2.jpeg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Illustration</p>
+    </div>
+    <div class="project">
+        <img src="img3.jpeg" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Comic Art</p>
+    </div>
+    <div class="project">
+        <img src="img4.jpeg" alt="Project 4">
+        <h3>Project 4</h3>
+        <p>Pop Art</p>
+    </div>
+    <div class="project">
+        <img src="img5.jpeg" alt="Project 5">
+        <h3>Project 5</h3>
+        <p>Poster Design</p>
+    </div>
+    <div class="project">
+        <img src="img6.jpeg" alt="Project 6">
+        <h3>Project 6</h3>
+        <p>Digital Art</p>
+    </div>
+    <div class="project">
+        <img src="img7.jpeg" alt="Project 7">
+        <h3>Project 7</h3>
+        <p>Typography</p>
+    </div>
+    <div class="project">
+        <img src="img10.jpeg" alt="Project 8">
+        <h3>Project 8</h3>
+        <p>Comic Strips</p>
+    </div>
+    <div class="project">
+        <img src="img8.jpeg" alt="Project 9">
+        <h3>Project 9</h3>
+        <p>Visual Art</p>
+    </div>
+</div>
+
+<div class="about">
+    I am passionate about creating vibrant and bold designs that capture the essence of pop art. Explore my projects and get in touch to collaborate.
+</div>
+
+<div class="subscribe">
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+</div>
+
+<div class="social-icons">
+    <img src="img11.jpeg" alt="Social Icon 1">
+    <img src="img12.jpeg" alt="Social Icon 2">
+    <img src="img13.jpeg" alt="Social Icon 3">
+</div>
+
+<footer>
+    &copy; 2024 POPARTPORTFOLIO
+</footer>
+
+<button class="contact-btn">Contact Me</button>
+
+</body>
+</html>
+
